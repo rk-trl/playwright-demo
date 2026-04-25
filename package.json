@@ -1,0 +1,26 @@
+{
+  "name": "playwright_demo",
+  "version": "1.0.0",
+  "description": "React + Playwright demo with story-based test organization",
+  "scripts": {
+    "start": "npm --prefix app run dev -- --host 127.0.0.1 --port 5173",
+    "test": "node scripts/run-tests.js",
+    "test:report": "node scripts/open-latest-report.js",
+    "generate-spec": "node scripts/generate-spec.js",
+    "pw:install": "playwright install chromium"
+  },
+  "keywords": [
+    "playwright",
+    "react",
+    "e2e"
+  ],
+  "author": "QA Demo",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
